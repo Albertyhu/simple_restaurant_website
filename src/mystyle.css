@@ -1,0 +1,66 @@
+body {
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: #414a41;
+    height: 100vh;
+}
+
+.tabcontent {
+margin-left: auto;
+margin-right: auto; 
+}
+
+
+/*main page*/
+#title, #subtitle {
+    font-family: Brush Script MT;
+    color: #edcb95;
+
+}
+
+#title {
+    padding-top: 0px;
+    font-size: 80px;
+}
+
+#subtitle {
+    padding-bottom: 0px;
+}
+
+#frame {
+    /* background-image: url('./images/dish.webp');*/
+    background-size: cover;
+    margin: auto;
+    display: block;
+    width: 99%;
+    height: 99%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgba(65,74,65,1), rgba(255,255,255,0) 50%, rgba(65,74,65,1)), url('./images/dish.webp');
+}
+
+#frame::after {
+    background: linear-gradient(transparent, gray);
+}
+
+#main_container {
+    opacity: 100;
+    border: solid 1px #c2c2c2;
+    margin-left: auto;
+    margin-right: auto;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    width: 99%;
+}
+
+#textbox {
+    background-color: black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;  
+    margin-top: 10px;
+    display: inline-block;
+   
+}
