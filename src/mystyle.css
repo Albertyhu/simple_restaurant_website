@@ -9,14 +9,29 @@ body {
 .tabcontent {
 margin-left: auto;
 margin-right: auto; 
+padding-left: 25px;
+padding-right: 25px; 
+display: none; 
+color: #ffffff;
+font-size: 20px; 
+bottom: 20px;
+text-align: center;
 }
 
+#home p {
+    width: 75%;
+    margin-top: 150px;
+    bottom: 0;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 /*main page*/
 #title, #subtitle {
-    font-family: Brush Script MT;
+    font-family: Goudy Old Style;
     color: #edcb95;
-
 }
 
 #title {
@@ -28,7 +43,7 @@ margin-right: auto;
     padding-bottom: 0px;
 }
 
-#frame {
+#hero {
     /* background-image: url('./images/dish.webp');*/
     background-size: cover;
     margin: auto;
@@ -36,22 +51,41 @@ margin-right: auto;
     width: 99%;
     height: 99%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to top, rgba(65,74,65,1), rgba(255,255,255,0) 50%, rgba(65,74,65,1)), url('./images/dish.webp');
+    background-image: linear-gradient(to top, rgba(65,74,65,1), rgba(255,255,255,0) 65%, rgba(65,74,65,1)), url('./images/dish.webp');
 }
 
-#frame::after {
-    background: linear-gradient(transparent, gray);
+#darkenedHero {
+    background-size: cover;
+    margin: auto;
+    display: block;
+    width: 99%;
+    height: 99%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgba(65,74,65,1), rgba(0,0,0,0.5) 50%, rgba(65,74,65,1)), url('./images/dish.webp');
+
 }
 
 #main_container {
     opacity: 100;
-    border: solid 1px #c2c2c2;
+    border: solid 2px #c2c2c2;
     margin-left: auto;
     margin-right: auto;
     height: 99%;
     display: flex;
     align-items: center;
     width: 99%;
+
+}
+
+#frame {
+    opacity: 100;
+    border: solid 2px #c2c2c2;
+    margin-left: auto;
+    margin-right: auto;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    width: 98%;
 }
 
 #textbox {
@@ -63,4 +97,99 @@ margin-right: auto;
     margin-top: 10px;
     display: inline-block;
    
+}
+
+#tabs {
+text-align: center; 
+text-justify: distribute-all-lines;
+display: inline-block;
+margin-top: 10px;
+}
+
+button.tablinks {
+    color: #ffffff;
+    background: rgba(255,255, 255, 0);
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Goudy Old Style;
+    font-size: 25px;
+}
+
+/*menu page*/
+
+#menu {
+    align-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu table {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+#menu th {
+    font-size: 25px;
+    color: #edcb95;
+}
+
+#wine tr {
+    height: 30px;
+}
+
+#menu_block {
+    overflow: auto;
+    max-height: 20em;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#wine {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.appetizers {
+   /* margin-top: 50px;*/
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #edcb95;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+.col1 {
+    
+}
+
+#secondary_container {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 70%; 
+    align-content: center; 
+    align-items: center;
+}
+
+#bookTitle {
+    color: #edcb95;
 }
