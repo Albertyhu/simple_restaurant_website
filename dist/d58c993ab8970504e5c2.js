@@ -8,6 +8,7 @@ const subtitle = document.getElementById('subtitle');
 const homeButton = document.getElementById('home_button');
 const menuButton = document.getElementById('menu_button');
 const contactButton = document.getElementById('contact_button');
+const hero = document.getElementsByClassName('hero');
 
 const switchPage = () => {
   if (currentPage === 1) {
@@ -19,6 +20,7 @@ const switchPage = () => {
     homeButton.style.textDecoration = "underline";
     menuButton.style.textDecoration = "none";
     contactButton.style.textDecoration = 'none';
+    hero[0].setAttribute('id', 'hero');
   } else if (currentPage === 2) {
     menu.style.display = "initial";
     home.style.display = "none";
@@ -28,6 +30,7 @@ const switchPage = () => {
     menuButton.style.textDecoration = "underline";
     homeButton.style.textDecoration = "none";
     contactButton.style.textDecoration = 'none';
+    hero[0].setAttribute('id', 'darkenedHero'); // hero.style.backgroundImage = "linear-gradient(to top, rgba(0,0,0,0.1), rgba(255,255,255, 0.5)), url('./images/dish.webp')";
   } else if (currentPage === 3) {
     contact.style.display = "initial";
     menu.style.display = "none";
@@ -37,6 +40,7 @@ const switchPage = () => {
     contactButton.style.textDecoration = "underline";
     menuButton.style.textDecoration = "none";
     homeButton.style.textDecoration = 'none';
+    hero[0].setAttribute('id', 'darkenedHero');
   }
 };
 
